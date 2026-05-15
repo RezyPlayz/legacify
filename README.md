@@ -1,6 +1,6 @@
 <div align="center">
+<img width="1500" height="356" src="https://github.com/user-attachments/assets/58d13710-68c4-49f2-af2d-46f514c4de86" />
 
-# Revival
 
 **Roblox CoreGui changer for exploit scripts**
 <p>
@@ -15,6 +15,8 @@
   </a>
 </p>
 </div>
+
+---
 
 ```lua
 getgenv().LegacySettings = ({
