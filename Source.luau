@@ -75,7 +75,11 @@ if (Settings.OldGraphics) then
 
         for _, Object in next, Lighting:GetChildren() do
             if (table.find({ "DepthOfFieldEffect", "SunRaysEffect", "BloomEffect", "BlurEffect", "ColorCorrectionEffect", "Atmosphere" }, Object.ClassName)) then
-                Object:Destroy()
+                if (not Object:IsA("Atmosphere")) then
+                    Hide(Object, "Enabled")
+                else
+                    Object:Destroy()
+                end
             end
         end
 
