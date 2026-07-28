@@ -2,7 +2,7 @@
 <img width="1500" height="356" alt="LegacyLogo" src="https://github.com/user-attachments/assets/691ad9f1-13b9-4ef3-a29b-0ed27c25c49f" />
 
 
-**Roblox CoreGui changer for executors**
+**Roblox CoreGui changer for executors. Lxe deleted their account vro**
 <p>
   <a href="https://github.com/lxte/cmd/stargazers">
     <img src="https://img.shields.io/github/stars/lxte/Legacy?label=Stars&logo=GitHub&style=flat-square" alt="GitHub Stars" />
