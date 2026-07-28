@@ -4,6 +4,38 @@ local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
 local Lighting = game:GetService("Lighting")
 
+local elementsToDelete = {
+	TopbarCentered = true,
+	TopbarCenteredClipped = true,
+	TopbarStandard = true,
+	TopbarStandardClipped = true,
+	Topbar = true,
+	UIs = true,
+	TopbarPlus = true,
+	TopbarContainer = true,
+}
+local function RemoveTopbarPlusObject(object)
+	if elementsToDelete[object.Name] then
+		object:Destroy()
+	end
+end
+
+-- Remove existing TopbarPlus objects, including nested ones
+for _, object in ipairs(PlayerGui:GetDescendants()) do
+	RemoveTopbarPlusObject(object)
+end
+
+-- Remove them again if a game creates them later
+PlayerGui.DescendantAdded:Connect(function(object)
+	if elementsToDelete[object.Name] then
+		task.defer(function()
+			if object.Parent then
+				object:Destroy()
+			end
+		end)
+	end
+end)
+
 -- Functions
 local Hide = function(Object, Property)
     if not Object or not Property then
