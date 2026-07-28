@@ -53,6 +53,7 @@ local Settings = getgenv().LegacySettings or ({
     Year = 2017,
     OldGraphics = true,
     HideDisplayName = true,
+	AccountCategory = "13+",
 })
 
 local RobloxGui = CoreGui:WaitForChild("RobloxGui")
