@@ -7,38 +7,51 @@ local Lighting = game:GetService("Lighting")
 local LocalPlayer = Players.LocalPlayer or Players.PlayerAdded:Wait()
 local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
 
-local elementsToDelete = {
-	TopbarCentered = true,
-	TopbarCenteredClipped = true,
-	TopbarStandard = true,
-	TopbarStandardClipped = true,
-	Topbar = true,
-	UIs = true,
-	TopbarPlus = true,
-	TopbarContainer = true,
-}
-local function RemoveTopbarPlusObject(object)
-	if elementsToDelete[object.Name] then
-		object:Destroy()
-	end
-end
+task.spawn(function()
+	local Players = game:GetService("Players")
 
--- Remove existing TopbarPlus objects, including nested ones
-for _, object in ipairs(PlayerGui:GetDescendants()) do
-	RemoveTopbarPlusObject(object)
-end
-
--- Remove them again if a game creates them later
-PlayerGui.DescendantAdded:Connect(function(object)
-	if elementsToDelete[object.Name] then
-		task.defer(function()
-			if object.Parent then
-				object:Destroy()
-			end
-		end)
+	local LocalPlayer = Players.LocalPlayer
+	while not LocalPlayer do
+		task.wait()
+		LocalPlayer = Players.LocalPlayer
 	end
+
+	local PlayerGui = LocalPlayer:WaitForChild("PlayerGui", 30)
+
+	if not PlayerGui then
+		warn("PlayerGui was not found; skipping TopbarPlus cleanup")
+		return
+	end
+
+	local elementsToDelete = {
+		TopbarCentered = true,
+		TopbarCenteredClipped = true,
+		TopbarStandard = true,
+		TopbarStandardClipped = true,
+		TopbarPlus = true,
+		TopbarContainer = true,
+	}
+
+	local function RemoveTopbarPlusObject(object)
+		if object and elementsToDelete[object.Name] then
+			object:Destroy()
+		end
+	end
+
+	for _, object in ipairs(PlayerGui:GetDescendants()) do
+		RemoveTopbarPlusObject(object)
+	end
+
+	PlayerGui.DescendantAdded:Connect(function(object)
+		if elementsToDelete[object.Name] then
+			task.defer(function()
+				if object and object.Parent then
+					object:Destroy()
+				end
+			end)
+		end
+	end)
 end)
-
 -- Functions
 local Hide = function(Object, Property)
     if not Object or not Property then
