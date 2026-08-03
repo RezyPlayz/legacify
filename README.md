@@ -20,12 +20,12 @@
 
 ```lua
 getgenv().LegacySettings = ({
-    Year = 2016, -- only 2012 to 2016 allowed (if unavailable, it will be set to 2016 by default)
+    Year = 2017, -- only 2012 to 2017 allowed (if unavailable, it will be set to 2017 by default)
     OldGraphics = true, -- changes graphics to be more like the 2016 graphics
     HideDisplayName = true, -- changes other users nametags to show their username instead of display name
 })
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lxte/Legacy/refs/heads/main/Source.luau"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RezyPlayz/Legacify/refs/heads/main/source2.luau"))();
 ```
 
 ---
