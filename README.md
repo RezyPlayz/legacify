@@ -1,5 +1,6 @@
 <div align="center">
-<img width="1500" height="356" alt="LegacyLogo" src="https://github.com/user-attachments/assets/691ad9f1-13b9-4ef3-a29b-0ed27c25c49f" />
+<img width="1024" height="353" alt="Legacify-03-08-2026" src="https://github.com/user-attachments/assets/e833ce4f-3cd7-4213-958d-95af1545ae9a" />
+" />
 
 
 **Roblox CoreGui changer for executors.**
