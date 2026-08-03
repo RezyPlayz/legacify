@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1024" height="353" alt="Legacify-03-08-2026" src="https://github.com/user-attachments/assets/e833ce4f-3cd7-4213-958d-95af1545ae9a" />
+<img width="1024" height="353" alt="Legacify-03-08-2026" src="https://github.com/user-attachments/assets/e833ce4f-3cd7-4213-958d-95af1545ae9a"
 " />
 
 
