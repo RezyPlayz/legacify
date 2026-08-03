@@ -30,8 +30,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RezyPlayz/Legacify/re
 ```
 
 ---
+<img width="210" height="529" alt="image" src="https://github.com/user-attachments/assets/0fad7eeb-be4f-4711-8366-bce4c8a06fa0" />
+<img width="174" height="527" alt="image" src="https://github.com/user-attachments/assets/994c9aa8-2d0f-407c-8dbe-49dd30a2b234" />
+<img width="145" height="510" alt="image" src="https://github.com/user-attachments/assets/0306b880-012e-4424-934d-b8e1bd367b30" />
+<img width="139" height="279" alt="image" src="https://github.com/user-attachments/assets/c5e08faf-17b2-4af8-8bc2-93823e1a92bc" />
+<img width="404" height="429" alt="image" src="https://github.com/user-attachments/assets/cef7fe15-674c-43d0-9933-22ab70746527" />
 
-<img width="216" height="388" alt="image" src="https://github.com/user-attachments/assets/0c708699-d3a1-4da8-a975-8df26e649b44" />
-<img width="191" height="388" alt="image" src="https://github.com/user-attachments/assets/1cf738f5-d036-472e-8f63-7f83beef89ef" />
-<img width="201" height="396" alt="image" src="https://github.com/user-attachments/assets/a447ebae-f2a8-4f01-8a76-4c80448d65f1" />
-<img width="390" height="392" alt="image" src="https://github.com/user-attachments/assets/cccd25ec-7a87-4e3d-9cbc-b8435a949d1d" />
+
+
