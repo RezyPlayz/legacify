@@ -18,7 +18,7 @@
 </div>
 
 ---
-
+**Credits to Lxte for the kickstart source..**
 ```lua
 getgenv().LegacySettings = ({
     Year = 2017, -- only 2012 to 2017 allowed (if unavailable, it will be set to 2017 by default)
