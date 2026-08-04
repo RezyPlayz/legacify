@@ -105,7 +105,7 @@ local Settings = getgenv().LegacySettings or ({
 
 local RobloxGui = CoreGui:WaitForChild("RobloxGui")
 local RBXM = getgenv().RBXMSuite or loadstring(game:HttpGetAsync("https://github.com/RezyPlayz/rbxm-suite/releases/latest/download/rbxm-suite.lua"))()
-local Source = RBXM.download("RezyPlayz/Legacify@latest", "Legacify.rbxm")
+local Source = RBXM.download("RezyPlayz/Legacify@latest", "Legacify-1.1.rbxm")
 local Module = RBXM.launch(Source, {
     runscripts = true,
     deferred = true,
