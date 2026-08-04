@@ -3,7 +3,7 @@
 " />
 
 
-**Roblox CoreGui changer for executors.**
+**Roblox Deluxe CoreGui changer for executors .**
 <p>
   <a href="https://github.com/lxte/cmd/stargazers">
     <img src="https://img.shields.io/github/stars/lxte/Legacy?label=Stars&logo=GitHub&style=flat-square" alt="GitHub Stars" />
